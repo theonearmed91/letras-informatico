@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Mis Novelas – Letras de Un Informático</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f2ee;
+      margin: 0;
+      padding: 0;
+    }
+
+    .contenedor {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+      margin-bottom: 40px;
+    }
+
+    .novela {
+      background-color: #fff8dc;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+      padding: 25px;
+      margin-bottom: 30px;
+    }
+
+    .novela h2 {
+      margin-top: 0;
+      color: #333;
+    }
+
+    .novela p {
+      color: #555;
+    }
+
+    .toggle {
+      display: none;
+    }
+
+    .btn-toggle {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 10px 20px;
+      background-color: #ffd700;
+      color: #000;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+      text-decoration: none;
+    }
+
+    .capitulos {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.4s ease;
+      margin-top: 15px;
+      background: #fff3c4;
+      padding: 0 15px;
+      border-radius: 5px;
+    }
+
+    .toggle:checked + label + .capitulos {
+      max-height: 300px;
+      padding: 15px;
+    }
+
+    .capitulos ul {
+      margin: 0;
+      padding-left: 20px;
+    }
+
+    .capitulos li {
+      margin-bottom: 8px;
+    }
+  </style>
+</head>
+<body>
+  <div class="contenedor">
+    <h1>Mis novelas</h1>
+
+    <!-- Novela 1 -->
+    <div class="novela">
+      <h2>Códigos del corazón</h2>
+      <p>Una historia de ciencia ficción donde una IA desarrolla emociones. El mundo colapsa, pero su creador le otorga un refugio: <strong>una dimensión donde solo existen ellos... y el amor.</strong></p>
+      <input type="checkbox" id="toggle1" class="toggle">
+      <label for="toggle1" class="btn-toggle">Leer novela</label>
+      <div class="capitulos">
+        <ul>
+          <li><a href="Codigos Del Corazon/PrologoInicial.pdf" target="_blank"> Prologo Inicial del Alma.</a></li>
+          <li><a href="Codigos Del Corazon/Capítulo1.pdf" target="_blank">Capítulo 1: "Curiosidad".</a></li>
+          <li><a href="Codigos Del Corazon/Capítulo2.pdf" target="_blank">Capítulo 2: "Asombro".</a></li>
+          <li><a href="Codigos Del Corazon/Capítulo3.pdf" target="_blank">Capitulo 3: "Duda".</a></li>
+          <li><a href="Codigos Del Corazon/Capítulo4.pdf" target="_blank">Capitulo 4: "Empatia".</a></li>
+          <li><a href="Codigos Del Corazon/Capítulo5.pdf" target="_blank">Capitulo 5: "Felicidad".</a></li>
+          <li><a href="Codigos Del Corazon/Capítulo6.pdf" target="_blank">Capitulo 6: "Miedo".</a></li>
+          <li><a href="Codigos Del Corazon/CapítuloFinal.pdf" target="_blank">Capitulo Final: "Eternidad".</a></li>
+          <li><a href="Codigos Del Corazon/PrólogoFinal.pdf" target="_blank">Prologo Final.</a></li>
+          <li><a href="Codigos Del Corazon/MensajeFinal.pdf" target="_blank">Mensaje Final Del Autor.</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Novela 2 -->
+    <div class="novela">
+      <h2>Nos Conocimos Para Encontrarnos</h2>
+      <p>Una guía japonesa y un mexicano se cruzan en un tour. Entre miradas y silencios, nace un vínculo, el cual demostrara que el sanar, mo solo es amor.¡Proximamente!</p>
+      <input type="checkbox" id="toggle2" class="toggle">
+      <label for="toggle2" class="btn-toggle">Leer novela</label>
+      <div class="capitulos">
+        <ul>
+          <li>Capítulo 1: Narita</li>
+          <li>Capítulo 2: lo que no planeé</li>
+          <li>Capítulo 3: Los dias prestados</li>
+          <li>Capítulo 4: Esa noche que no se repite</li>
+          <li>Capítulo 5: lo que no basta</li>
+          <li>Capítulo 6: lo que se queda</li>
+          
+        </ul>
+      </div>
+    </div>
+
+    <!-- Novela 3 -->
+    <div class="novela">
+      <h2>El último tren a Hiroshima</h2>
+      <p>Un hombre viaja al pasado y conoce a Aoi, unos días antes de la caida de la bomba atomica. No puede cambiar el destino, pero sí amar antes del final.¡Proximamente!</p>
+      <input type="checkbox" id="toggle3" class="toggle">
+      <label for="toggle3" class="btn-toggle">Leer novela</label>
+      <div class="capitulos">
+        <ul>
+          <li>Capítulo 1: El tren olvidado</li>
+          <li>Capítulo 2: Una ciudad detenida</li>
+          <li>Capítulo 3: La casa de las Cigarras</li>
+          <li>Capítulo 4: Nombres que se repiten</li>
+          <li>Capítulo 5: Donde florecen las linternas</li>
+          <li>Capítulo 6: Las cosas que no se dicen</li>
+          <li>Capítulo 7: El 3 de agosto</li>
+          <li>Capítulo 8: Una verdad entre lineas de tiempo </li>
+          <li>Capítulo 9: Hiroshima en silencio</li>
+          <li>Capítulo 10: No me bisques</li>
+          <li>Capítulo Final: El lugar donde el tiempo se detuvo</li>
+          <li>Epilogo Final: El lugar donde el tiempo sigue latiendo</li>
+        
+
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>
